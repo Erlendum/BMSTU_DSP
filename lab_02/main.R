@@ -50,6 +50,9 @@ rectDiscreteFixed <- dft(fix(rectSource))
 
 k = 0:(length(t)-1)
 
+# 0.00017 БФТ
+# 0.012 ДФТ
+
 par(mfrow = c(5, 2))
 plot(t, rectSource, main = "Прямоугольный импульс", sub = "Исходная", type = "l", xlab = "t", ylab = "")
 plot(k, abs(rectFast), main = "Прямоугольный импульс", sub = "БПФ", type = "l", xlab = "k", ylab = "")
